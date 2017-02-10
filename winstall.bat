@@ -8,3 +8,7 @@ choco install packages.confg -y
 
 nvm install latest
 nvm use latest
+
+gem update bundler
+gem install sass
+gem install compass
