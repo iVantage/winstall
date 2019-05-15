@@ -1,9 +1,10 @@
 # winstall
 
-> Zero to productive-ish
+> Zero to productive-ish in not very long.
 
-1. [Download][1] and extract
-2. Run `winstall.bat`
+1. [Download][1]
+2. Extract
+2. Run `winstall.bat` as an Administrator
 
 ## License
 

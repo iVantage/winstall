@@ -2,13 +2,10 @@
 REM Get chocolatey
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
+REM Install da packages
 choco install packages.confg -y
 
-%ProgramData%\chocolatey\bin\RefreshEnv.cmd
-
-nvm install latest
-nvm use latest
-
-gem update bundler
-gem install sass
-gem install compass
+REM Get the latest node
+REM Note that `nvm install latest` works but `nvm use latest` does not. Hence
+REM the major version number.
+cmd /c nvm install 12; nvm use 12
